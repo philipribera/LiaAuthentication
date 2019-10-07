@@ -1,0 +1,194 @@
+body {
+    outline: none;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+.wrapper {
+    width: 60%;
+    background-color: rgb(242,242,242);    
+    padding: 42px;
+    margin: 0 auto;
+}
+/* Generics */
+h1 {
+    font-size: 2.2em;
+    color: rgb(39, 133, 216);
+}
+h3 {
+    color: rgb(77,77,77);
+    font-weight: 500;
+}
+h4 span {
+    color: rgb(77,77,77);
+    font-weight: 500;
+    margin-left: 6px;
+}
+li {
+    list-style: none;
+}
+
+/* forms */
+form {
+    width: 80%;
+}
+fieldset {
+    padding: 14px 22px;
+    border: 2px solid rgb(222,222,222);
+}
+legend {
+    padding: 0 8px;
+    color: rgb(57,57,57);
+}
+label {
+    margin-right: 4px;
+}
+input, select {
+    width: 200px;
+    padding: 5px;
+    margin: 2px 0;
+}
+input[type="submit"] {
+    cursor: pointer;
+    background-color: rgb(39, 133, 216);
+    color: rgb(252,252,252);
+    padding: 4px 10px;
+    border-radius: 6px;
+}   
+input[type="submit"]:hover {
+    opacity: 0.95;
+}
+button {
+    cursor: pointer;
+    padding: 4px;
+}
+button:hover {
+    opacity: 0.95;
+}
+
+/* Other */
+.portfolio-detail-list, .portfolio-position-list, .portfolio-stock-list  {
+    width: 60%;    
+    padding-left: 22px;        
+    margin: 0;
+}
+.portfolio-detail-list li, .portfolio-position-list li {
+    padding: 2px;
+    border-bottom: 1px solid rgb(212,212,212);
+}
+.portfolio-stock-list {
+    width: 84%;
+    min-width: 654px
+}
+
+.login-hidden {
+    display: none;
+}
+.login-message {
+    height: 24px;
+    margin-bottom: 8px;
+}
+
+.portfolio {    
+    width: 90%;
+}
+.portfolio-hidden {
+    display: none;
+}
+.portfolio-header {
+    display: flex;
+    flex-wrap: wrap;
+}
+.portfolio-account-hidden {
+    display: none;
+}
+.position-instrument-field-hidden {
+    display: none;
+}
+
+.sign-out {
+    padding: 6px;
+    margin-left: 12px;
+}
+.sign-out:hover {
+    opacity: 0.9;
+}
+.user-port {
+    white-space: nowrap;
+    color: rgb(102,102,102);
+    padding: 2px 4px;
+    margin-right: 14px;    
+}
+.seperatorOne, .seperatorSec, .seperatorThr  {
+    word-spacing: 0.4em;    
+    color: rgb(77,77,77);
+    padding: 6px;
+}
+.seperatorOne {
+    background-color: rgb(252,252,252);    
+    font-weight: 600;    
+    padding-bottom: 8px;
+    border-bottom: 2px solid rgb(212,212,212);
+    margin-top: 12px;
+}
+.seperatorThr {    
+    word-spacing: 0.2em;
+    margin-bottom: 20px;
+}
+.more-info {
+    padding: 4px;
+    background-color: rgb(38, 144, 41);
+    color: rgb(254,254,254);
+    margin-left: 18px;
+    border-radius: 6px;
+    float: right;
+}
+
+.company-description {
+    display: inline-block;    
+    line-height: 1.7em;
+    background-color: rgb(255, 240, 199);
+    color: rgb(77,77,77);
+    padding: 0 10px;
+    margin-bottom: 12px;
+}
+
+/*** MEDIA QUERIES ***/
+
+@media only screen and (max-width: 1280px) {
+    .wrapper {
+        width: 84%;
+        padding: 24px;
+    }			
+}
+
+@media only screen and (max-width: 767px) {
+    .wrapper {
+        width: 100%;      
+        padding: 20px;
+    }
+    .portfolio-header {
+        display: block;
+    }
+    .user-port { 
+        display: inline-block;
+        margin-bottom: 12px;
+    }
+    .portfolio-detail-list, .portfolio-position-list, .portfolio-stock-list  {
+        width: 90%;    
+        padding-left: 10px;    
+    }
+}
+
+@media only screen and (max-width: 492px) {    
+    .wrapper {
+        text-align: left;
+        padding: 12px;
+    }    
+}

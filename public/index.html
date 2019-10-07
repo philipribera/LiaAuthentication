@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="Philip R">
+    <title>Lia Authentication</title>
+    <link href="./stylesheet.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- LOGIN PAGE -->
+      <div class="user-login">
+        <h1>PORTFOLIO</h1>
+        <br />
+
+        <form id="login-form">
+          <fieldset>
+            <legend>SKRIV IN CREDENTIALS</legend>
+            <label>E-post</label><br /><input type="email" id="email" />
+            <br />
+            <label>Lösenord</label><br /><input type="password" id="password" />
+          </fieldset>
+          <br />
+          <div class="login-message"></div>
+          <input type="submit" value="LOGGA IN" />
+        </form>
+      </div>
+      <!-- END LOGIN -->
+
+      <!-- PORTFOLIO PAGE -->
+      <div class="portfolio portfolio-hidden">
+        <section class="account-select ">
+          <h1>Portfolio</h1>          
+          <h3>Välj konto</h3>
+          <form>
+            <select class="portfolio-list" required>
+              <option value="" selected>Choose Portfolio</option>
+              <option value="zero">Aktie/Fonddepå</option>
+              <option value="one">Investeringssparkonto</option>
+            </select>
+          </form>
+          <br />
+        </section>
+
+        <div class="portfolio-account portfolio-account-hidden">
+          <section class="portfolio-header">
+            <h4>
+              <span class="user-port" id="user-provider">NORDNET</span>
+              <span class="user-port" id="user-acc-name"></span>
+              <span class="user-port" id="acc-number"></span>
+              <button class="sign-out">LOGGA UT</button><br />
+            </h4>            
+
+          </section>
+          <hr />
+          
+          <h4><span>Kontouppgifter</span></h4>
+          <div class="portfolio-details">
+            <div class="account-details"></div>
+            <!-- Here we display account overview -->
+          </div>
+          <br />
+          <hr />          
+          
+          <h4><span>Värdepapper</span></h4>
+          <div class="portfolio-stocks">
+            <div class="account-stocks">
+              <!-- Here we display instrument/stocks -->
+            </div>
+          </div>
+          <br />          
+          </div>
+          <br />        
+
+        <!-- END PORTFOLIO PAGE -->
+        </div>
+      </div>    
+
+    <script src="./script.js"></script>
+  </body>
+</html>
